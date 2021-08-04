@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #649cb4;
+  --secondary-color: #f5ce00;
+  --background-color: #e5e5e5;
+  --text-color: #4e4b40;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Merriweather", serif;
+  --drop-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+h1 {
+  color: var(--primary-color);
+  box-shadow: var(--drop-shadow);
+}
