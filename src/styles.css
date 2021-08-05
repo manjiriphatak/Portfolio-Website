@@ -166,3 +166,59 @@ li {
   border-radius: 7px;
   box-shadow: var(--drop-shadow);
 }
+
+.shadowBoxProjects {
+  margin-bottom: 80px;
+  margin-top: 80px;
+  padding: 20px;
+  box-shadow: var(--drop-shadow);
+  border-radius: 7px;
+  width: 100%;
+  display: block;
+}
+
+.shadowBoxMini {
+  padding: 5px;
+  margin: 30px;
+  border: 2px solid var(--background-color);
+  border-radius: 7px;
+  max-width: 100%;
+}
+
+.projectBox {
+  margin: 10px;
+}
+.projectImage {
+  max-width: 100%;
+  border-radius: 7px;
+}
+
+.projectButtons a {
+  font-family: var(--secondary-font);
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.contactbuttons {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.mini {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.emailId {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  font-size: 15px;
+}
+footer {
+  text-align: center;
+  background-color: var(--primary-color);
+}
