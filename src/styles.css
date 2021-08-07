@@ -11,11 +11,9 @@
 body {
   margin-top: 160px;
 }
-.bg-customnav {
+
+.navbar {
   background-color: var(--primary-color);
-}
-.navbar a {
-  color: white;
 }
 .colorCharacter {
   color: var(--secondary-color);
@@ -32,7 +30,7 @@ p {
   font-size: 23px;
 }
 h3 {
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
 }
 p {
   font-weight: 300;
@@ -42,7 +40,7 @@ p {
 h1 {
   line-height: 60px;
   font-size: 84px;
-  font-weight: 400;
+  font-weight: 200;
   margin-top: 0px;
   margin-bottom: 20px;
   font-family: var(--primary-font);
@@ -51,16 +49,7 @@ h1 {
 .shadowBox-homepage {
   margin-bottom: 150px;
   margin-top: 100px;
-  height: 600px;
-  padding: 0;
-  box-shadow: var(--drop-shadow);
-  border-radius: 7px;
-  width: 100%;
-  max-height: 500px;
-}
-.shadowBox {
-  margin-bottom: 80px;
-  margin-top: 80px;
+  height: 500px;
   padding: 0;
   box-shadow: var(--drop-shadow);
   border-radius: 7px;
@@ -75,6 +64,14 @@ h1 {
   border-radius: 5px;
 }
 
+.shadowBox {
+  margin-bottom: 80px;
+  margin-top: 80px;
+  padding: 0;
+  box-shadow: var(--drop-shadow);
+  border-radius: 7px;
+  width: 100%;
+}
 .myImage {
   max-width: 476px;
   margin-left: 65px;
@@ -104,9 +101,9 @@ h1 {
   position: absolute;
   left: 0;
   margin-top: 12px;
-  width: 39%;
+  width: 30%;
   height: 2px;
-  background: var(--text-color);
+  background: var(--primary-color);
   opacity: 50%;
 }
 .subheading button::after {
@@ -114,9 +111,9 @@ h1 {
   position: absolute;
   right: 0;
   margin-top: 12px;
-  width: 39%;
+  width: 30%;
   height: 2px;
-  background: var(--text-color);
+  background: var(--primary-color);
   opacity: 50%;
 }
 
@@ -148,6 +145,7 @@ h1 {
 .skills {
   width: 90px;
   padding: 10px;
+  text-align: center;
 }
 ul {
   list-style: none;
@@ -221,4 +219,83 @@ li {
 footer {
   text-align: center;
   background-color: var(--primary-color);
+}
+@media (max-width: 960px) {
+  .skillscol p {
+    font-size: 12px;
+  }
+  .skills {
+    width: 60px;
+  }
+}
+@media (max-width: 540px) {
+  body {
+    margin-top: 100px;
+  }
+  .skillscol p {
+    font-size: 9px;
+  }
+  .skills {
+    width: 30px;
+    padding: 0;
+  }
+  .emailId {
+    font-size: 10px;
+  }
+  .aboutmetext {
+    font-size: 16px;
+  }
+  .shadowBox,
+  .shadowBoxProjects {
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .subheading button {
+    padding: 3px 39px;
+    font-size: 13px;
+  }
+  li .linkbuttons {
+    max-width: 40px;
+    margin: 2px 2px 20px 2px;
+    padding: 7px;
+  }
+  .shadowBoxMini {
+    margin: 5px;
+    text-align: center;
+  }
+  .shadowBox-homepage {
+    margin-bottom: 50px;
+    margin-top: 0px;
+    height: 200px;
+    padding: 0;
+
+    width: 80%;
+  }
+  .intro {
+    margin-left: 0px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .intro a {
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+
+  h3,
+  p {
+    font-size: 13px;
+  }
+
+  .projectButtons a {
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 3px;
+  }
 }
