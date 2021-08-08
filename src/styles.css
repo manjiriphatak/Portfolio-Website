@@ -39,13 +39,15 @@ p {
 
 h1 {
   line-height: 60px;
-  font-size: 84px;
+  font-size: 62px;
   font-weight: 200;
   margin-top: 0px;
   margin-bottom: 20px;
   font-family: var(--primary-font);
 }
-
+h5 {
+  font-size: 10px;
+}
 .shadowBox-homepage {
   margin-bottom: 150px;
   margin-top: 100px;
@@ -124,11 +126,29 @@ h1 {
 .aboutmetext {
   font-family: var(--primary-font);
   padding: 30px;
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 0;
 }
 .skillsrow {
   padding: 40px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+li {
+  display: inline;
+}
+.linkbuttons {
+  margin: 20px;
+
+  padding: 10px;
+  max-width: 60px;
+  border-radius: 7px;
+  box-shadow: var(--drop-shadow);
 }
 .skillscol {
   text-align: center;
@@ -146,23 +166,6 @@ h1 {
   width: 90px;
   padding: 10px;
   text-align: center;
-}
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-li {
-  display: inline;
-}
-.linkbuttons {
-  margin: 20px;
-
-  padding: 10px;
-  max-width: 60px;
-  border-radius: 7px;
-  box-shadow: var(--drop-shadow);
 }
 
 .shadowBoxProjects {
@@ -227,6 +230,12 @@ footer {
   .skills {
     width: 60px;
   }
+  h1 {
+    font-size: 39px;
+  }
+  .aboutmetext {
+    font-size: 16px;
+  }
 }
 @media (max-width: 540px) {
   body {
@@ -241,9 +250,6 @@ footer {
   }
   .emailId {
     font-size: 10px;
-  }
-  .aboutmetext {
-    font-size: 16px;
   }
   .shadowBox,
   .shadowBoxProjects {
@@ -274,14 +280,14 @@ footer {
   }
   .intro {
     margin-left: 0px;
-    margin-top: 30px;
+    margin-top: 43px;
     text-align: center;
   }
   .intro a {
     font-size: 10px;
   }
   h1 {
-    font-size: 40px;
+    font-size: 27px;
     line-height: 30px;
     margin-bottom: 15px;
   }
