@@ -118,7 +118,7 @@ h4 {
   position: absolute;
   left: 0;
   margin-top: 12px;
-  width: 30%;
+  width: 40%;
   height: 2px;
   background: var(--primary-color);
   opacity: 50%;
@@ -128,7 +128,7 @@ h4 {
   position: absolute;
   right: 0;
   margin-top: 12px;
-  width: 30%;
+  width: 40%;
   height: 2px;
   background: var(--primary-color);
   opacity: 50%;
@@ -290,6 +290,10 @@ footer {
   .skillstext {
     font-size: 12px;
   }
+  .subheading button::before,
+  .subheading button::after {
+    width: 30%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -318,7 +322,7 @@ footer {
   }
   .subheading button {
     padding: 3px 39px;
-    font-size: 13px;
+    font-size: 15px;
   }
   li .linkbuttons {
     max-width: 40px;
@@ -348,10 +352,47 @@ footer {
   }
 
   .projectButtons a {
-    font-size: 10px;
+    font-size: 12px;
     padding: 5px 10px;
     border-radius: 5px;
     text-decoration: none;
     margin-right: 3px;
+  }
+  .subheading button::before,
+  .subheading button::after {
+    width: 30%;
+    margin-top: 9px;
+  }
+}
+@media (max-width: 360px) {
+  .skillsrow {
+    padding: 7px;
+  }
+  .skillscol {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0;
+  }
+
+  .skills {
+    width: 100%;
+    padding: 1px;
+  }
+  .subheading button::before,
+  .subheading button::after {
+    width: 20%;
+    margin-top: 9px;
+  }
+  .shadowBox-homepage,
+  .shadowBox,
+  .shadowBoxProjects {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .highlightnavbar {
+    font-size: 13px;
+  }
+  .contactbuttons {
+    padding: 10px 0px 20px 0px;
   }
 }
