@@ -162,24 +162,20 @@ li {
   box-shadow: var(--drop-shadow);
 }
 .skillsrow {
-  padding: 30px;
+  padding: 20px;
 }
 .skillscol {
+  padding: 5px;
   text-align: center;
   border-radius: 7px;
   box-shadow: var(--drop-shadow);
   max-width: 60%;
-  margin: auto;
+  margin: 10px auto;
 }
 
-.skills {
-  width: 100%;
-  padding: 15px;
-  text-align: center;
-}
 .skillstext {
   font-size: 16px;
-  padding-bottom: 5px;
+  margin-bottom: 0px;
   color: var(--text-color);
 }
 
@@ -243,6 +239,7 @@ li {
 footer {
   text-align: center;
   background-color: var(--primary-color);
+  font-size: 12px;
 }
 
 @media (max-width: 1200px) {
@@ -258,7 +255,7 @@ footer {
 }
 @media (max-width: 991px) {
   .intro {
-    padding: 30px 40px;
+    padding: 40px 40px;
   }
 
   h1 {
@@ -270,21 +267,14 @@ footer {
   h4 {
     font-size: 18px;
   }
+  h4 {
+    margin-bottom: 30px;
+  }
 
   .aboutmetext {
     font-size: 16px;
   }
-  .skillsrow {
-    padding: 20px;
-  }
-  .skillscol {
-    max-width: 90%;
-  }
 
-  .skills {
-    width: 100%;
-    padding: 10px;
-  }
   .skillstext {
     font-size: 12px;
   }
@@ -304,19 +294,23 @@ footer {
     font-size: 10px;
     margin-bottom: 0px;
   }
-  .skillsrow {
-    padding: 10px;
-  }
-  .skillscol {
-    padding-bottom: 0px;
-  }
+
   .homeBg {
     padding-top: 90px;
     padding-bottom: 1px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+  }
+  .shadowBox-homepage,
+  .shadowBox,
+  .shadowBoxProjects {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 540px) {
+  .homeBg {
+    padding-top: 40px;
+  }
   .emailId {
     font-size: 10px;
   }
@@ -335,13 +329,6 @@ footer {
   .shadowBoxMini {
     margin: 5px;
     text-align: center;
-  }
-  .skillsrow {
-    padding: 10px;
-  }
-
-  .skills {
-    padding: 5px;
   }
 
   h1 {
@@ -367,35 +354,13 @@ footer {
     margin-top: 9px;
   }
   .highlightnavbar {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 @media (max-width: 360px) {
-  .skillsrow {
-    padding: 7px;
-  }
-  .skillscol {
-    max-width: 100%;
-    margin: 0px;
-    padding: 0;
-  }
-
-  .skills {
-    width: 100%;
-    padding: 1px;
-  }
   .subheading button::before,
   .subheading button::after {
     width: 20%;
     margin-top: 9px;
-  }
-  .shadowBox-homepage,
-  .shadowBox,
-  .shadowBoxProjects {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .contactbuttons {
-    padding: 10px 0px 20px 0px;
   }
 }
