@@ -34,7 +34,7 @@
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <span class="highlightnavbar">Manjiri Phatak</span>
         </a>
         <button
@@ -51,27 +51,39 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a class="nav-link active" aria-current="page" href="index.html">
                 <span class="highlightnavbar"> Home</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a class="nav-link" aria-current="page" href="index.html#aboutMe">
                 <span class="highlightnavbar"> ABOUT ME</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="index.html#mySkills"
+              >
                 <span class="highlightnavbar"> SKILLS</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="index.html#projects"
+              >
                 <span class="highlightnavbar"> PROJECTS</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="index.html#contactInfo"
+              >
                 <span class="highlightnavbar"> CONTACT</span></a
               >
             </li>
@@ -86,8 +98,10 @@
             <h3>HELLO, I am</h3>
             <h1>MANJIRI PHATAK</h1>
             <h4>Front-End Developer, Based in Canada</h4>
-            <div class="contactButton">
-              <a href="#">CONTACT ME</a>
+            <div>
+              <a href="mailto:manjiri.phatak@gmail.com" class="contactButton"
+                >CONTACT ME</a
+              >
             </div>
           </div>
           <div class="col-md-4 p-0">
@@ -96,7 +110,7 @@
         </div>
       </div>
     </div>
-    <div class="subheading">
+    <div class="subheading" id="aboutMe">
       <button>Some info <span class="highlight"> ABOUT ME </span></button>
     </div>
     <div class="container shadowBox">
@@ -120,7 +134,7 @@
 
       <ul>
         <li>
-          <a href=""
+          <a href="mailto:manjiri.phatak@gmail.com"
             ><img src="images/gmail.png" alt="" class="linkbuttons img-fluid"
           /></a>
         </li>
@@ -144,7 +158,7 @@
         </li>
       </ul>
     </div>
-    <div class="subheading">
+    <div class="subheading" id="mySkills">
       <button>Check out <span class="highlight"> MY SKILLS </span></button>
     </div>
     <div class="container shadowBox">
@@ -187,7 +201,7 @@
         </div>
       </div>
     </div>
-    <div class="subheading">
+    <div class="subheading" id="projects">
       <button>Featured <span class="highlight"> PROJECTS </span></button>
     </div>
     <div class="container shadowBoxProjects">
@@ -206,6 +220,10 @@
               This is a fully-functioning React Weather app that displays
               current weather conditions plus a six-day forecast for major
               cities around the world.
+              <br />
+              <br />
+              <strong> Built on: </strong> React, Open Weather API, Bootstrap,
+              CSS, HTML. Hosted on Netlify
             </p>
 
             <div>
@@ -233,8 +251,12 @@
               For my second React project, I built a functioning dictionary
               application that provides definitions, synonyms, audio
               pronunciations and images.
+              <br />
+              <br />
+              <strong> Built on: </strong>React, Dictionary API, Bootstrap, CSS,
+              HTML. Hosted on Netlify
             </p>
-            <div>
+            <div class="d-flex align-items-end">
               <span class="projectButtons"> <a href="">View Live</a> </span>
               <span class="projectButtons"> <a href="">GitHub</a> </span>
             </div>
@@ -252,21 +274,31 @@
           </div>
           <div class="col">
             <h3 class="font-weight-bold projectTitle">
-              PaperPosh <span>- Handmade Papercuts</span>
+              PaperPosh
+              <span
+                >- Handmade Papercuts
+                <span class="comingsoon"> (Coming Soon)</span></span
+              >
             </h3>
             <p class="projectText">
               This project is a catalog to showcase my passion for Papercutting
-              and Intricate Handmade Products
+              and Intricate Handmade Products.
+              <br /><br />
+
+              <strong> Built on: </strong>Bootstrap, CSS, HTML. Hosted on
+              Netlify
             </p>
-            <div>
-              <span class="projectButtons"> <a href="">View Live</a> </span>
+            <div class="d-flex align-items-end">
+              <span class="projectButtons">
+                <a href="">View Live</a>
+              </span>
               <span class="projectButtons"> <a href="">GitHub</a> </span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="subheading">
+    <div class="subheading" id="contactInfo">
       <button><span class="highlight">CONTACT ME </span></button>
     </div>
     <div class="container shadowBox">
