@@ -7,6 +7,9 @@
   --secondary-font: "Playfair Display", serif;
   --drop-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+body {
+  overflow-x: hidden;
+}
 
 nav {
   background-color: var(--primary-color);
@@ -44,16 +47,16 @@ h1 {
   margin-bottom: 20px;
   font-family: var(--primary-font);
 }
-h3,
-h4 {
+h2,
+h3 {
   font-size: 23px;
   color: var(--text-color);
   font-weight: 400;
 }
-h3 {
+h2 {
   font-family: var(--primary-font);
 }
-h4 {
+h3 {
   margin-bottom: 60px;
   font-family: var(--primary-font);
 }
@@ -92,6 +95,7 @@ h4 {
   margin-bottom: 80px;
   margin-top: 80px;
   padding: 0;
+
   box-shadow: var(--drop-shadow);
   border-radius: 7px;
   width: 100%;
@@ -107,6 +111,7 @@ h4 {
 
 .subheading button {
   margin: auto;
+
   cursor: default;
   text-align: center;
   font-family: var(--secondary-font);
@@ -151,6 +156,7 @@ h4 {
   font-size: 18px;
   margin-bottom: 0;
   color: var(--text-color);
+  overflow-wrap: break-word;
 }
 
 ul {
@@ -178,6 +184,7 @@ li {
 }
 .skillsrow {
   padding: 20px;
+  padding-bottom: 10px;
 }
 .skillscol {
   padding: 5px;
@@ -223,12 +230,16 @@ li {
 
   border-radius: 7px;
 }
+.project-description {
+}
 .projectTitle {
   font-family: var(--secondary-font);
   color: var(--primary-color);
   text-transform: uppercase;
   padding-top: 30px;
   font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 0px;
 }
 .projectText {
   color: var(--text-color);
@@ -257,9 +268,12 @@ li {
   font-size: 15px;
 }
 .contactbuttons {
-  text-align: center;
   padding: 20px 25px 30px 25px;
 }
+.contactmeimage {
+  text-align: center;
+}
+
 .mini {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -298,6 +312,9 @@ footer a:hover {
     margin-top: 17px;
     margin-bottom: 17px;
   }
+  .projectTitle {
+    padding-top: 5px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -309,14 +326,23 @@ footer a:hover {
     margin-top: 12px;
     margin-bottom: 12px;
   }
-  h3 {
+  h2 {
     font-size: 20px;
   }
-  h4 {
+  h3 {
     font-size: 18px;
   }
   .skillstext {
     font-size: 12px;
+  }
+  .projectImage {
+    max-width: 100%;
+  }
+  .projectText {
+    font-size: 16px;
+  }
+  .projectTitle {
+    font-size: 20px;
   }
 }
 @media (max-width: 991px) {
@@ -334,11 +360,11 @@ footer a:hover {
     margin-top: 2px;
     margin-bottom: 2px;
   }
-  h3,
-  h4 {
+  h2,
+  h3 {
     font-size: 15px;
   }
-  h4 {
+  h3 {
     margin-bottom: 30px;
   }
 
@@ -357,6 +383,12 @@ footer a:hover {
   .subheading button::after {
     width: 30%;
   }
+  .projectImage {
+    max-width: 100%;
+  }
+  .project-description {
+    padding-top: 20px 0px 0px 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -371,10 +403,22 @@ footer a:hover {
   .imagemain {
     text-align: center;
   }
+  .skillsrow > * {
+    width: calc(100% / 3);
+  }
+  .contactbuttons > * {
+    width: calc(100% / 3);
+    padding: 0px;
+  }
+  .contactmeimage .linkbuttons {
+    margin: auto;
+  }
+
   .skillscol {
-    max-width: 50%;
+    max-width: 100%;
     margin: 10px auto;
   }
+
   .skillstext {
     font-size: 10px;
     margin-bottom: 0px;
@@ -384,6 +428,10 @@ footer a:hover {
     padding-top: 90px;
     padding-bottom: 1px;
     margin-bottom: 40px;
+  }
+  .project-description {
+    text-align: center;
+    padding: 0px;
   }
 }
 @media (max-width: 540px) {
@@ -415,7 +463,7 @@ footer a:hover {
     line-height: 30px;
   }
 
-  h3,
+  h2,
   p {
     font-size: 13px;
   }
@@ -434,10 +482,6 @@ footer a:hover {
   }
   .highlightnavbar {
     font-size: 15px;
-  }
-  .skillscol {
-    max-width: 20%;
-    margin: 10px auto;
   }
 }
 @media (max-width: 360px) {

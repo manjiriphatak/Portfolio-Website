@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Designer and Front End Developer based in Canada."
+    />
+    <meta name="keywords" content="" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,7 +38,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Manjiri Phatak - Front-end Developer - Personal Website</title>
+    <title>Front-end Developer - Manjiri Phatak</title>
   </head>
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
@@ -112,9 +117,9 @@
       <div class="container shadowBox-homepage">
         <div class="row">
           <div class="col-md-8 intro">
-            <h3>HELLO, I am</h3>
+            <h2>HELLO, I am</h2>
             <h1>MANJIRI PHATAK</h1>
-            <h4>Front-End Developer, Based in Canada</h4>
+            <h3>Front-End Developer, Based in Canada</h3>
             <div>
               <a
                 href="mailto:manjiri.phatak@gmail.com"
@@ -133,8 +138,10 @@
           </div>
         </div>
       </div>
+      <br id="aboutMe" />
     </div>
-    <div class="subheading" id="aboutMe">
+
+    <div class="subheading">
       <button>Some info <span class="highlight"> ABOUT ME </span></button>
     </div>
     <div class="container shadowBox">
@@ -156,7 +163,7 @@
         at my world of Papercuts and Design, you can get in touch here..
       </p>
 
-      <ul>
+      <ul id="mySkills">
         <li>
           <a
             href="mailto:manjiri.phatak@gmail.com"
@@ -203,7 +210,7 @@
         </li>
       </ul>
     </div>
-    <div class="subheading" id="mySkills">
+    <div class="subheading">
       <button>Check out <span class="highlight"> MY SKILLS </span></button>
     </div>
     <div class="container shadowBox">
@@ -245,21 +252,22 @@
           </div>
         </div>
       </div>
+      <br id="projects" />
     </div>
-    <div class="subheading" id="projects">
+    <div class="subheading">
       <button>Featured <span class="highlight"> PROJECTS </span></button>
     </div>
     <div class="container shadowBoxProjects">
       <div class="shadowBoxMini">
         <div class="row projectBox">
-          <div class="col d-none d-md-block projectImages">
+          <div class="col-md-12 col-lg-6 d-none d-md-block projectImages">
             <img
               src="images/weatherapp.png"
               alt="Weather App by Manjiri Phatak"
               class="img-fluid projectImage"
             />
           </div>
-          <div class="col">
+          <div class="col project-description">
             <h3 class="projectTitle">The Weather App</h3>
             <p class="projectText">
               This is a fully-functioning React Weather app that displays
@@ -295,14 +303,14 @@
 
       <div class="shadowBoxMini">
         <div class="row projectBox">
-          <div class="col d-none d-md-block projectImages">
+          <div class="col-md-12 col-lg-6 d-none d-md-block projectImages">
             <img
               src="images/weatherapp.png"
               alt="Dictionary App by Manjiri Phatak"
               class="img-fluid projectImage"
             />
           </div>
-          <div class="col">
+          <div class="col project-description">
             <h3 class="projectTitle">
               The Dictionary Project
               <span class="comingsoon"> (Coming Soon)</span>
@@ -333,14 +341,14 @@
       </div>
       <div class="shadowBoxMini">
         <div class="row projectBox">
-          <div class="col d-none d-md-block projectImages">
+          <div class="col-md-12 col-lg-6 d-none d-md-block projectImages">
             <img
               src="images/paperposh.jpg"
               alt=""
               class="img-fluid projectImage"
             />
           </div>
-          <div class="col">
+          <div class="col project-description">
             <h3 class="projectTitle">
               PaperPosh
               <span
@@ -360,7 +368,7 @@
               <span class="projectButtons">
                 <a href="" title="Visit Website" target="_blank">View Live</a>
               </span>
-              <span class="projectButtons">
+              <span class="projectButtons" id="contactInfo">
                 <a href="" title="Visit GitHUb Repository" target="_blank"
                   >GitHub</a
                 >
@@ -370,14 +378,14 @@
         </div>
       </div>
     </div>
-    <div class="subheading" id="contactInfo">
+    <div class="subheading">
       <button><span class="highlight">CONTACT ME </span></button>
     </div>
     <div class="container shadowBox">
       <div class="row contactbuttons">
-        <div class="col-xs-4 col-sm-4">
+        <div class="col-sm-4 contactmeimage">
           <a href="mailto:manjiri.phatak@gmail.com" title="Email">
-            <img src="images/gmail.png" alt="" class="linkbuttons img-fluid" />
+            <img src="images/gmail.png" alt="" class="linkbuttons" />
           </a>
           <div>
             <a
@@ -388,7 +396,7 @@
             >
           </div>
         </div>
-        <div class="col-xs-4 col-sm-4">
+        <div class="col-sm-4 contactmeimage">
           <a
             href="https://github.com/manjiriphatak"
             target="_blank"
@@ -404,7 +412,7 @@
             >
           </div>
         </div>
-        <div class="col-xs-4 col-sm-4">
+        <div class="col-sm-4 contactmeimage">
           <a
             href="https://www.linkedin.com/in/manjiriphatak/"
             target="_blank"
