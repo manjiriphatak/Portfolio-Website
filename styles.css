@@ -260,6 +260,19 @@ li {
   justify-items: center;
   align-items: center;
   width: 100%;
+  text-align: center;
+}
+.contact-section a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.contact-section p {
+  display: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease-in-out;
+}
+.contact-section p:hover {
+  transform: scale(1.1);
 }
 .linkbuttons {
   max-width: 13vw;
@@ -355,6 +368,9 @@ footer a:hover {
   }
   .project-buttons {
     justify-content: space-evenly;
+  }
+  .contact-section p {
+    display: block;
   }
 }
 
